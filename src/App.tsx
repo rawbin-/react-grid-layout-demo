@@ -1,14 +1,16 @@
-import RGL from 'react-grid-layout'
+import RGL, { WidthProvider } from 'react-grid-layout'
+
+const ReactGridLayout = WidthProvider(RGL)
 function App() {
 
   return (
     <>
-        <RGL
+        <ReactGridLayout
         >
             <div key="a">a</div>
             <div key="b">b</div>
             <div key="c">c</div>
-        </RGL>
+        </ReactGridLayout>
     </>
   )
 }
